@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>African Wild Animals Blog</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; color: darkgreen;">Welcome to the African Wild Animals Blog</h1>
+    </header>
+
+    <main>
+        <div>
+            <!-- Ordered List Section -->
+            <h2>The Big Five</h2>
+            <ol type="I">
+                <li>Lion</li>
+                <li>Elephant</li>
+                <li>Buffalo</li>
+                <li>Leopard</li>
+                <li>Rhinoceros</li>
+            </ol>
+
+            <!-- External Image Section -->
+            <h2>Wildlife Beauty</h2>
+            <img src="https://images.pexels.com/photos/691058/pexels-photo-691058.jpeg" 
+                alt="African Wildlife" style="width: 100%; height: auto; border: 2px solid darkgreen;">
+
+            <!-- Contacts Table -->
+            <h2>Contacts for Wildlife Tours</h2>
+            <table border="1" cellspacing="0" cellpadding="5" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Safari</td>
+                        <td>Nairobi, Kenya</td>
+                        <td>+254700123456</td>
+                        <td>john.safari@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Explorer</td>
+                        <td>Arusha, Tanzania</td>
+                        <td>+255789654321</td>
+                        <td>emily.explorer@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Robert Guide</td>
+                        <td>Kampala, Uganda</td>
+                        <td>+256712345678</td>
+                        <td>robert.guide@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Tracker</td>
+                        <td>Johannesburg, South Africa</td>
+                        <td>+27 600456789</td>
+                        <td>sarah.tracker@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Adventurer</td>
+                        <td>Lusaka, Zambia</td>
+                        <td>+260955123456</td>
+                        <td>michael.adventurer@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Registration Form -->
+            <h2>Register for Updates</h2>
+            <form action="/submit" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+                </div>
+
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div>
+                    <label for="interests">Select Your Interest:</label>
+                    <select id="interests" name="interests">
+                        <option value="wildlife_tours">Wildlife Tours</option>
+                        <option value="safari_photography">Safari Photography</option>
+                        <option value="conservation">Conservation Efforts</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Choose Your Membership:</label>
+                    <div>
+                        <input type="radio" id="standard" name="membership" value="standard" required>
+                        <label for="standard">Standard</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="premium" name="membership" value="premium">
+                        <label for="premium">Premium</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Extras:</label>
+                    <div>
+                        <input type="checkbox" id="newsletter" name="extras" value="newsletter">
+                        <label for="newsletter">Receive Newsletter</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="alerts" name="extras" value="alerts">
+                        <label for="alerts">Wildlife Alerts</label>
+                    </div>
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
